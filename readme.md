@@ -1,6 +1,6 @@
 # Biodata
 
-Nama : Dany Ahmad Ihza Prakoso__
+Nama : Dany Ahmad Ihza Prakoso\
 NIM : 185150701111017
 
 ## Official Documentation
