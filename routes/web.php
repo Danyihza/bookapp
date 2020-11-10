@@ -21,3 +21,10 @@ $router->get('key', function () {
 
 $router->get('books', 'BooksController@index');
 $router->get('book/{id}', 'BooksController@getBookbyId');
+
+// CRUD AUTHOR
+$router->get('/author', 'AuthorController@index');
+$router->get('/author/{id}', 'AuthorController@show');
+$router->post('/author', 'AuthorController@store');
+$router->put('/author/{id}', 'AuthorController@update');
+$router->delete('/author/{id}', 'AuthorController@delete');

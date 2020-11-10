@@ -14,7 +14,7 @@ class BooksController extends Controller
 
     public function getBookbyId($id)
     {
-        $book = DB::table('books')->where('id', $id)->first();
+        $book = Book::where('id', $id)->first();
         if ($book) {
             return response()->json([
                 'message' => 'Success',
@@ -23,7 +23,7 @@ class BooksController extends Controller
         } else {
             return response()->json([
                 'message' => 'Book not found'
-            ], 404);
+            ],404);
         }
     }
 }
